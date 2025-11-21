@@ -22,7 +22,7 @@ const generate_access_and_refresh_token = async (user_id) => {
   }
 };
 
-const options = { httpOnly: true, secure: true };
+const options = { httpOnly: true, secure: true, sameSite: 'none' };
 
 export const register_user = async_handler(async (req, res) => {
   const { name, email, password } = req.body;
