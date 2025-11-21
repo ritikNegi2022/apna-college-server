@@ -8,7 +8,7 @@ import { error_handler } from "./utils/function_handlers.js";
 
 dotenv.config();
 const app = express();
-const whitelist = ["http://localhost:3000", "https://apna-college-client.vercel.app/];
+const whitelist = ["http://localhost:3000", "https://apna-college-client.vercel.app/"];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin) {
